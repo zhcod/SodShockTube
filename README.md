@@ -1,4 +1,4 @@
-# SodShockTube_1D_Fortran
+# SodShockTube
 
 ## Problem:
 
