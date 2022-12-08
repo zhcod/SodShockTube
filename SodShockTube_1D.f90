@@ -1,6 +1,6 @@
 ! This code is to solve the Sod Shock tube problem (1D).
 ! Using Lax, Lax-Wendroff, MacC, FVS, Roe method.
-! Write by zhliu on 2022.11
+! Write by zhcod on 2022.11
 
 
 module sodshock 
@@ -216,7 +216,7 @@ module sodshock
             e = p/(Gamma-1.D0)/rho
             h = e+v**2/2.D0+p/rho
 
-            !前缀m表示Roe平均
+            !The prefix m means Roe mean
             do j=1,Nx
             mD(j)=sqrt(rho(j+1)/rho(j))
             mh(j)=(h(j)+mD(j)*h(j+1))/(1+mD(j))
